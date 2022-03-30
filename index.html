@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="app.css">
 
-    <title>Video Metadata</title>
+    <title>Demo website</title>
 </head>
 
 <body>
@@ -113,10 +113,14 @@
                         </div>
                     </div>
                     <div class="col-12 justify-content-center hiddenAudio">
-                        <div class="col-10 blurb" style="padding-left: 0; padding-right: 0">
-                            <p class="lead">3 2 1 0</p>
-                            <p class="lead">[MUSIC]</p>
-                            <p class = "lead">Speed performance normal</p>
+                        <div class="row">
+                            <div class="col-10 blurb" style="padding-left: 0; padding-right: 0">
+                                <p class="lead">3 2 1 0</p>
+                                <p class="lead">[MUSIC]</p>
+                                <p class = "lead">Speed performance normal</p>
+                                <button class="btn btn-lg btn-light keyword1">Extract Keywords</button>
+                                <p class="lead keywords1">Keywords: Speed, Performance, Normal</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6 justify-content-center hiddenOCR">
@@ -131,34 +135,34 @@
                         <div class="col-10 blurb" style="padding-left: 0; padding-right: 0">
                             <div class="row justify-content-center">
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg keyFrame">Rocket</button>
+                                    <button type="button" class="btn btn-light btn-lg">Rocket</button>
                                 </div>
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg audioAnalysis">49%</button>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg videoOcr">Sky</button>
-                                </div>
-                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg objDetection">35%</button>
+                                    <button type="button" class="btn btn-light btn-lg">49%</button>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg videoOcr">Fire</button>
+                                    <button type="button" class="btn btn-light btn-lg">Sky</button>
                                 </div>
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg objDetection">41%</button>
+                                    <button type="button" class="btn btn-light btn-lg">35%</button>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg videoOcr">Tower</button>
+                                    <button type="button" class="btn btn-light btn-lg ">Fire</button>
                                 </div>
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg objDetection">9%</button>
+                                    <button type="button" class="btn btn-light btn-lg">41%</button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg">Tower</button>
+                                </div>
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg">9%</button>
                                 </div>
                             </div>
                         </div>
@@ -182,24 +186,31 @@
                 $(".hiddenAudio").hide();
                 $(".hiddenOCR").hide();
                 $(".hiddenObj").hide();
+                $(".keywords1").hide();
             });
             $(".audioAnalysis").click(function () {
                 $(".hiddenImgs").hide();
                 $(".hiddenAudio").toggle();
                 $(".hiddenOCR").hide();
                 $(".hiddenObj").hide();
+                $(".keywords1").hide();
             });
             $(".videoOcr").click(function () {
                 $(".hiddenImgs").hide();
                 $(".hiddenAudio").hide();
                 $(".hiddenOCR").toggle();
                 $(".hiddenObj").hide();
+                $(".keywords1").hide();
             });
             $(".objDetection").click(function () {
                 $(".hiddenImgs").hide();
                 $(".hiddenAudio").hide();
                 $(".hiddenOCR").hide();
                 $(".hiddenObj").toggle();
+                $(".keywords1").hide();
+            });
+            $(".keyword1").click(function () {
+                $(".keywords1").toggle();
             });
         });
     </script>
