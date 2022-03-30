@@ -119,7 +119,7 @@
                                 <p class="lead">[MUSIC]</p>
                                 <p class = "lead">Speed performance normal</p>
                                 <button class="btn btn-lg btn-light keyword1">Extract Keywords</button>
-                                <p class="lead keywords1">Keywords: Speed, Performance, Normal</p>
+                                <p class="lead keywords1"><b>Keywords: Speed, Performance, Normal</b></p>
                             </div>
                         </div>
                     </div>
@@ -130,15 +130,18 @@
                         <p class="lead">LIFT-OFF AND ONBOARD CAMERA VIEWS</p>
                         <p class="lead">PSLV-C51/AMAZONIA-1MISSION</p>
                         <p class = "lead">INDIAN SPACE REASEARCH ORGANIZATION</p>
+                        <button class="btn btn-lg btn-light keyword2">Extract Keywords</button>
+                        <p class="lead keywords2"><b>Keywords: Camera, Views, Onboard</b></p>
                     </div>
                     <div class="col-12 justify-content-center hiddenObj">
                         <div class="col-10 blurb" style="padding-left: 0; padding-right: 0">
+                            <b style="color: white; font-size: 1.5rem;">Object Presence Percentage</b>
                             <div class="row justify-content-center">
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
                                     <button type="button" class="btn btn-light btn-lg">Rocket</button>
                                 </div>
                                 <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
-                                    <button type="button" class="btn btn-light btn-lg">49%</button>
+                                    <button type="button" class="btn btn-light btn-lg">68%</button>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
@@ -165,6 +168,11 @@
                                     <button type="button" class="btn btn-light btn-lg">9%</button>
                                 </div>
                             </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12" style="padding-left: 0; padding-right: 0; margin-top: 20px; color: white; font-size: 1.5rem;">
+                                    <b>Predicted Class: Launch Mission</b> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,6 +195,7 @@
                 $(".hiddenOCR").hide();
                 $(".hiddenObj").hide();
                 $(".keywords1").hide();
+                $(".keywords2").hide();
             });
             $(".audioAnalysis").click(function () {
                 $(".hiddenImgs").hide();
@@ -194,6 +203,7 @@
                 $(".hiddenOCR").hide();
                 $(".hiddenObj").hide();
                 $(".keywords1").hide();
+                $(".keywords2").hide();
             });
             $(".videoOcr").click(function () {
                 $(".hiddenImgs").hide();
@@ -201,6 +211,7 @@
                 $(".hiddenOCR").toggle();
                 $(".hiddenObj").hide();
                 $(".keywords1").hide();
+                $(".keywords2").hide();
             });
             $(".objDetection").click(function () {
                 $(".hiddenImgs").hide();
@@ -208,9 +219,13 @@
                 $(".hiddenOCR").hide();
                 $(".hiddenObj").toggle();
                 $(".keywords1").hide();
+                $(".keywords2").hide();
             });
             $(".keyword1").click(function () {
                 $(".keywords1").toggle();
+            });
+            $(".keyword2").click(function () {
+                $(".keywords2").toggle();
             });
         });
     </script>
