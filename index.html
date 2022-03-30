@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="app.css">
+
+    <title>Video Metadata</title>
+</head>
+
+<body>
+    <!-- <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand">Video Classification</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav> -->
+        <section class="container-fluid px-0 py-0">
+            <div class="row align-items-center" >
+                <div class="col-lg-6" style="padding-left: 0; padding-right: 0">
+                    <div id="headingGroup" class="text-white text-center">
+                        <h1 class=""><b>VIDEO METADATA GENERATION AND CLASSIFICATION</b> </h1>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="padding-left: 0; padding-right: 0">
+                    <img class="img-fluid" src="imgs\Rocket1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 text-center order-1" style="padding-left: 0; padding-right: 0">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0" style="padding-left: 0; padding-right: 0">
+                        <h3 class = "form-heading">Choose video to upload</h3>
+                        <input type="file" name="file" placeholder="video file" class="form-control form-jaided" required="" id="id_file">
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 30px;">
+                    <div class="col-4" style="padding-left: 0; padding-right: 0">
+                        <button type="button" class="btn btn-light btn-lg keyFrame">Extract Key Frames</button>
+                    </div>
+                    <div class="col-4" style="padding-left: 0; padding-right: 0">
+                        <button type="button" class="btn btn-light btn-lg audioAnalysis">Audio analysis</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 30px;">
+                    <div class="col-4" style="padding-left: 0; padding-right: 0">
+                        <button type="button" class="btn btn-light btn-lg videoOcr">Video OCR</button>
+                    </div>
+                    <div class="col-4" style="padding-left: 0; padding-right: 0">
+                        <button type="button" class="btn btn-light btn-lg objDetection">Object Detection</button>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="col-md-6 text-center order-2" style="padding-left: 0; padding-right: 0"> 
+                <div class="row justify-content-center">
+                    <div class="col-12 justify-content-center imgs hiddenImgs">
+                        <div class="row justify-content-center">
+                            <div class = "col-3 keyImg">
+                                <img src = "imgs\2022-03-28 (4).png" style = "max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src = "imgs\2022-03-28 (5).png" style = "max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (8).png" alt="" style = "max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (12).png" alt="" style = "max-width: 100%;">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (13).png" alt="" style = "max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (14).png" alt="" style = "max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (18).png" alt="" style = "max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (24).png" alt="" style = "max-width: 100%;">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (29).png" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (32).png" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (37).png" alt="" style="max-width: 100%;">
+                            </div>
+                            <div class = "col-3 keyImg">
+                                <img src="imgs\2022-03-28 (42).png" alt="" style="max-width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 justify-content-center hiddenAudio">
+                        <div class="col-10 blurb" style="padding-left: 0; padding-right: 0">
+                            <p class="lead">3 2 1 0</p>
+                            <p class="lead">[MUSIC]</p>
+                            <p class = "lead">Speed performance normal</p>
+                        </div>
+                    </div>
+                    <div class="col-6 justify-content-center hiddenOCR">
+                        <img src="imgs\2022-03-28 (4).png" alt="" style="max-width: 100%;">
+                    </div>
+                    <div class="col-6 justify-content-center hiddenOCR">
+                        <p class="lead">LIFT-OFF AND ONBOARD CAMERA VIEWS</p>
+                        <p class="lead">PSLV-C51/AMAZONIA-1MISSION</p>
+                        <p class = "lead">INDIAN SPACE REASEARCH ORGANIZATION</p>
+                    </div>
+                    <div class="col-12 justify-content-center hiddenObj">
+                        <div class="col-10 blurb" style="padding-left: 0; padding-right: 0">
+                            <div class="row justify-content-center">
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg keyFrame">Rocket</button>
+                                </div>
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg audioAnalysis">49%</button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg videoOcr">Sky</button>
+                                </div>
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg objDetection">35%</button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg videoOcr">Fire</button>
+                                </div>
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg objDetection">41%</button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg videoOcr">Tower</button>
+                                </div>
+                                <div class="col-4" style="padding-left: 0; padding-right: 0; margin-top: 20px">
+                                    <button type="button" class="btn btn-light btn-lg objDetection">9%</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+       $(document).ready(function () {
+            $(".keyFrame").click(function () {
+                $(".hiddenImgs").toggle();
+                $(".hiddenAudio").hide();
+                $(".hiddenOCR").hide();
+                $(".hiddenObj").hide();
+            });
+            $(".audioAnalysis").click(function () {
+                $(".hiddenImgs").hide();
+                $(".hiddenAudio").toggle();
+                $(".hiddenOCR").hide();
+                $(".hiddenObj").hide();
+            });
+            $(".videoOcr").click(function () {
+                $(".hiddenImgs").hide();
+                $(".hiddenAudio").hide();
+                $(".hiddenOCR").toggle();
+                $(".hiddenObj").hide();
+            });
+            $(".objDetection").click(function () {
+                $(".hiddenImgs").hide();
+                $(".hiddenAudio").hide();
+                $(".hiddenOCR").hide();
+                $(".hiddenObj").toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
